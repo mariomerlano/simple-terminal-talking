@@ -260,7 +260,7 @@ class WhisperPTT:
             
             # Small delay to ensure focus
             time.sleep(0.1)
-            keyboard_controller.type(text)
+            keyboard_controller.type(text + " ")
         except Exception as e:
             print(f"Error typing text: {e}")
             print(f"Text to type: {text}")
